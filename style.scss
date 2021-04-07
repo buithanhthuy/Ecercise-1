@@ -43,12 +43,11 @@ $blue: blue;
   justify-content: space-between;
   align-items: center;
 
-  &__left {
+  &-left {
     @include menu;
     float: left;
   }
-
-  .header__left--logo {
+  .header-left--logo {
     width: 50px;
     color: $color-text;
     height: 50px;
@@ -62,7 +61,7 @@ $blue: blue;
     }
   }
 
-  .header__left--cancel {
+  .header-left--cancel {
     color: $color-text;
     width: 50px;
     height: 50px;
@@ -77,19 +76,19 @@ $blue: blue;
     }
   }
 
-  .header__left--name {
+  .header-left--name {
     @include menu;
     font-size: 20px;
   }
 
-  &__right {
+  &-right {
     float: right;
     display: flex;
     justify-content: space-between;
   }
 }
 
-.header__right a {
+.header-right a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,49 +102,49 @@ $blue: blue;
 }
 
 // ======================menu left===============================
-.content__left {
+.left-content {
   display: flex;
   flex-direction: column;
   overflow: auto;
   height: calc(100vh - 50px);
 }
 
-.content__left--search {
+.left-content--search {
   height: 50px;
   display: flex;
   border: 1px solid #eee;
   color: #b4b8b6;
 }
 
-.content__left--search-icon {
+.left-content--search-icon {
   display: flex;
   width: 50px;
   justify-content: center;
   align-items: center;
 }
 
-.content__left--search-input {
+.left-content--search-input {
   border: none;
   overflow: visible;
   flex: 1;
 }
 
-.content__left--search-input:focus {
+.left-content--search-input:focus {
   outline: -webkit-focus-ring-color auto 0px;
 }
 
-.content__left--menu {
+.left-content--menu {
   list-style-type: none;
   overflow: auto;
 }
 
-.content__left--title {
+.left-content--title {
   font-weight: 700;
   padding-left: 5%;
   background-color: $gray;
 }
 
-.content__left--menu-item {
+.left-content--menu-item {
   height: 50px;
   font-weight: 600;
   display: flex;
@@ -173,15 +172,15 @@ $blue: blue;
   }
 }
 
-.content__left--menu--list {
+.left-content--menu--list {
   padding-left: 30%;
 }
 
-.content__left--menu--bgcolor {
+.left-content--menu--bgcolor {
   background-color: $gray;
 }
 
-.content__left--icon:hover {
+.left-content--icon:hover {
   background-color: $main-color;
 }
 
@@ -224,7 +223,7 @@ $blue: blue;
   border-bottom: 1px solid $gray;
 }
 
-.content__right--list-scroll-item {
+.right-content--list-scroll-item {
   height: 100%;
   overflow: auto;
 }
@@ -241,13 +240,13 @@ $blue: blue;
   color: green;
 }
 
-.content__right--list-elect {
+.right-content--list-elect {
   display: flex;
   justify-content: space-between;
   margin-top: 25px;
 }
 
-.content__right--list-elect-right {
+.right-content--list-elect-right {
   display: flex;
   height: 30px;
   width: 350px;
@@ -276,7 +275,7 @@ $blue: blue;
   }
 }
 
-.content__right--icon-question {
+.right-content--icon-question {
   margin-left: 10px;
 
   & i {
@@ -284,17 +283,17 @@ $blue: blue;
   }
 }
 
-.content__right--list-elect-left {
+.right-content--list-elect-left {
   font-size: 23px;
   font-weight: 400;
 }
 
-.content__right--list-tools {
+.right-content--list-tools {
   margin-top: 30px;
   margin-bottom: 80px;
 }
 
-.content__right--list-tools-left {
+.right-content--list-tools-left {
   float: left;
 
   &-add {
@@ -305,20 +304,20 @@ $blue: blue;
     }
   }
 
-  .content__right--list-tools-left-print {
-    @extend .content__right--list-tools-left-add;
+  .right-content--list-tools-left-print {
+    @extend .right-content--list-tools-left-add;
   }
 
-  .content__right--list-tools-left-information {
-    @extend .content__right--list-tools-left-add;
+  .right-content--list-tools-left-information {
+    @extend .right-content--list-tools-left-add;
   }
 
-  .content__right--list-tools-left-list {
-    @extend .content__right--list-tools-left-add;
+  .right-content--list-tools-left-list {
+    @extend .right-content--list-tools-left-add;
   }
 }
 
-.content__right--list-tools-right {
+.right-content--list-tools-right {
   float: right;
   display: flex;
   justify-content: space-between;
